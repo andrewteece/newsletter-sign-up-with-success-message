@@ -5,23 +5,71 @@
 :root {
   --ff-primary: "Roboto", sans-serif;
 
-  --dark-navy: hsl(234, 29%, 20%);
+  --clr-primary: hsl(234, 29%, 20%);
   --dark-gray: hsl(235, 18%, 26%);
-  --med-gray: hsl(231, 7%, 60%);
-  --white: hsl(0, 0%, 100%);
+  --clr-text-muted: hsl(231, 7%, 60%);
+  --clr-bkg: hsl(0, 0%, 100%);
 
-  --tomato: hsl(4, 100%, 67%);
+  --accent1: hsl(4, 100%, 67%);
 
-  --main-gradient:(linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%));
+  --main-gradient: (linear-gradient(225deg, #ff6a3a 0%, #ff527b 100%));
 
-  --fs-200: .75rem;
+  --fs-200: 0.75rem;
   --fs-400: 1rem;
   --fs-700: 2.5rem;
   --fs-800: 3.5rem;
 
   --borderRadius-400: 1rem;
+}
 
+/* CSS RESET */
 
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* FEM ATTRIB */
