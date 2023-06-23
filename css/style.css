@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* CSS CUSTOM PROPERTIES */
+
+:root {
+  --ff-primary: "Roboto", sans-serif;
+
+  --dark-navy: hsl(234, 29%, 20%);
+  --dark-gray: hsl(235, 18%, 26%);
+  --med-gray: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+
+  --tomato: hsl(4, 100%, 67%);
+
+  --main-gradient:(linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%));
+
+  --fs-200: .75rem;
+  --fs-400: 1rem;
+  --fs-700: 2.5rem;
+  --fs-800: 3.5rem;
+
+  --borderRadius-400: 1rem;
+
+
+}
+
+/* FEM ATTRIB */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
