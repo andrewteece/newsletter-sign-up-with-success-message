@@ -72,6 +72,14 @@ button {
   cursor: pointer;
 }
 
+/* GLOBAL STYLE */
+
+body {
+    font-family: var(--ff-primary);
+}
+
+/* UTILITY CLASSES */
+
 /* FEM ATTRIB */
 
 .attribution {
