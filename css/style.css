@@ -8,7 +8,7 @@
   --clr-primary: hsl(234, 29%, 20%);
   --dark-gray: hsl(235, 18%, 26%);
   --clr-text-muted: hsl(231, 7%, 60%);
-  --clr-bkg: hsl(0, 0%, 100%);
+  --clr-bkg: hsl(0, 11%, 95%);
 
   --accent1: hsl(4, 100%, 67%);
 
@@ -19,6 +19,7 @@
   --fs-700: 2.5rem;
   --fs-800: 3.5rem;
 
+  --borderRadius-200: .5rem;
   --borderRadius-400: 1rem;
 }
 
@@ -72,13 +73,21 @@ button {
   cursor: pointer;
 }
 
-/* GLOBAL STYLE */
+/* BASE STYLES */
 
 body {
     font-family: var(--ff-primary);
 }
 
 /* UTILITY CLASSES */
+
+.wrapper {
+  background-color: var(--clr-bkg);
+}
+
+.hidden {
+  display: none;
+}
 
 /* FEM ATTRIB */
 

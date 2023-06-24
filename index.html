@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <script src="js/main.js" type="module"></script>
@@ -32,11 +32,13 @@
               <p>And much more!</p>
             </li>
           </ul>
-          <form action="/success" class="grid--md" id="newsletter-form">
+          <form action="/success.html" class="grid--md" id="newsletter-form">
             <div grid--xs>
-              <label for="email"><small>Email address</small></label>
-              <p class="error-message hidden">
-              <small>Valid email required</small></p>
+              <div class="flex--between items--center">
+                <label for="email"><small>Email address</small></label>
+                <p class="error-message hidden">
+                <small>Valid email required</small></p>
+              </div>
               <input type="email" id="email" placeholder="email@company.com" required>
             </div>
             <button type="submit" class="btn">
