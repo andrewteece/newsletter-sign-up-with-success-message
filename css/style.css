@@ -7,10 +7,11 @@
 
   --clr-primary: hsl(234, 29%, 20%);
   --clr-dark-gray: hsl(235, 18%, 26%);
-  --clr-text-muted: hsl(231, 7%, 60%);
+  --clr-text-muted: hsl(228, 11%, 73%);
   --clr-bkg: hsl(0, 11%, 95%);
 
-  --accent1: hsl(4, 100%, 67%);
+  --clr-accent1: hsl(4, 100%, 67%);
+  --clr-error: hsl(5, 91%, 36%);
 
   --main-gradient: (linear-gradient(225deg, #ff6a3a 0%, #ff527b 100%));
 
@@ -148,9 +149,8 @@ body {
   align-items: center;
 }
 
-.text--small {
+.text--sm {
   font-size: var(--fs-200);
-  font-weight: 700;
 }
 
 .icon--sm {
@@ -177,6 +177,34 @@ body {
 .btn:focus {
   background-color: var(--clr-text-muted);
   color: var(--clr-primary);
+}
+
+/* FORM STYLES */
+
+.main--label {
+  font-weight: 700;
+}
+
+.main--input {
+  width: 100%;
+  padding: var(--space-md);
+  border: 1px solid var(--clr-text-muted);
+  border-radius: var(--borderRadius-200);
+  color: var(--clr-primary);
+
+}
+
+.main--input:hover,
+.main--input:focus {
+  outline: 2px solid transparent;
+  box-shadow: 0px 0px 0px 3px var(--clr-bkg),
+  0px 0px 0px 4px var(--clr-accent1);
+}
+
+.main--input.error {
+  background-color: var(--clr-error);
+  box-shadow: 0px 0px 0px 2px var(--clr-accent1);
+  color: var(--clr-accent1);
 }
 
 /* IMAGES */
